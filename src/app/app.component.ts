@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef } from '@angular/core';
 
 @Component({
   moduleId: module.id,
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  private viewContainerRef: ViewContainerRef;
+	public constructor(viewContainerRef:ViewContainerRef) {
+		// You need this small hack in order to catch application root view container ref
+		this.viewContainerRef = viewContainerRef;
+		console.log('Environment config',);
+	}
+
 }
  

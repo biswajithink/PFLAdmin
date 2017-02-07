@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 @Component({
 	moduleId: module.id,
 	selector: 'dashboard-cmp',
-	templateUrl: 'dashboard.component.html'
+	templateUrl: 'dashboard.component.html',
+	styleUrls: ['./dashboard.css']
 })
 
-export class DashboardComponent { }
+export class DashboardComponent { 
+	
+}

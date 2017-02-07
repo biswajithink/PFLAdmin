@@ -1,4 +1,25 @@
 
+#toggle-sidebar{
+    position: fixed;
+    top: 0px;
+    left: 5px;
+    color: #FFF;
+    background: #222;
+    font-size: 23px;
+    z-index: 3;
+    display: none;
+    border: none;
+}
+#toggle-sidebar:focus{
+    outline: none;
+}
+.sidebarPushRight{
+    left: 225px !important;
+    z-index:10;
+}
+.mainContainerPushLeft{
+    margin : 55px 255px 0 0;
+}
 .sidebar{
   border-radius: 0;
   position: fixed;
@@ -84,3 +105,23 @@
 .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item:hover{
                     background : #222;
                 }                    
+
+@media screen and (max-width: 768px) {
+    #toggle-sidebar{
+        display:block;
+        top: 3px;
+    }
+    .display-sm {
+        display:block;
+    }
+    .hide-sm{
+        display:none;
+    }
+    .sidebar{
+        left:0;
+    }
+    .main-container{
+        margin-left : 0;
+    }
+    
+}                
