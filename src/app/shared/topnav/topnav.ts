@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
     moduleId: module.id,
     selector: 'top-nav',
     templateUrl: 'topnav.html',
+	styleUrls: ['./topnav.css']
 })
 
 export class TopNavComponent {

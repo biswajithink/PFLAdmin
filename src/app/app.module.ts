@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+
 
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
@@ -19,6 +21,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ChartsModule,
     RouterModule.forRoot(routes),
     LoginModule,
     DashboardModule,
